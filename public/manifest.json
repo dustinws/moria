@@ -1,0 +1,39 @@
+{
+    "short_name": "Moria",
+    "name": "Moria",
+    "icons": [
+        {
+            "src": "/assets/pwa/manifest-icon-192.maskable.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/assets/pwa/manifest-icon-192.maskable.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/assets/pwa/manifest-icon-512.maskable.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/assets/pwa/manifest-icon-512.maskable.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "id": "/",
+    "start_url": "/",
+    "background_color": "#334155",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#334155",
+    "shortcuts": [],
+    "description": "End to end encrypted storage.",
+    "screenshots": []
+}

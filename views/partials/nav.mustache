@@ -1,0 +1,16 @@
+<nav class="h-full w-full bg-slate-700 flex items-center p-4 shadow-md justify-between">
+    <div class="flex items-center w-full space-x-4">
+        <img src="/assets/img/icon.png" class="h-16 alt="logo" />
+        <h1 class="text-4xl text-slate-100">Moria</h1>
+    </div>
+    {{#loggedIn}}
+    <div class="flex items-center space-x-4 w-full">
+        <button id="upload-button" class="text-slate-50 bg-green-700 hover:bg-green-600 text-xl h-12 w-32 rounded">Upload</button>
+        <a href="/logout">
+            <button class="bg-slate-100 hover:bg-slate-50 h-12 w-32 rounded">
+                <div class="text-xl text-slate-700">Leave</div>
+            </div>
+        </a>
+    </div>
+    {{/loggedIn}}
+</nav>

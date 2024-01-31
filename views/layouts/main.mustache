@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/assets/manifest.json">
+    <link rel="shortcut icon" href="/assets/vector/mountain.svg" type="image/svg">
+    <title>Moria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            font-family: 'monofur', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="h-full min-h-screen w-full flex flex-col bg-slate-100">
+    <div class="h-1/5 flex w-full">
+        {{> views/partials/nav}}
+    </div>
+    <div class="h-4/5 flex overflow-y-auto flex-grow justify-center w-full">
+        {{{embed}}}
+    </div>
+</body>
+
+</html>
