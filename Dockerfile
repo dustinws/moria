@@ -12,6 +12,9 @@ RUN go build -o main main.go
 
 FROM alpine:3.18
 
+RUN apk update && apk add --no-cache openssl
+RUN openssl req -x509 -newkey rsa:4096 -keyout /root/key.pem -out /root/cert.pem -days 365 -nodes -subj '/CN=localhost'
+
 RUN apk --no-cache add ca-certificates
 
 WORKDIR /root/

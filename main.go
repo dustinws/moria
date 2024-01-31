@@ -195,7 +195,7 @@ func main() {
 		return c.Send(contents)
 	})
 
-	log.Fatal(app.Listen(":8080"))
+	log.Fatal(app.ListenTLS(":8080", "cert.pem", "key.pem"))
 }
 
 type NewConnectionDTO struct {
